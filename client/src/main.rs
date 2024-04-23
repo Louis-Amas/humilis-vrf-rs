@@ -16,7 +16,6 @@ use alloy::{
     transports::{http::Http, ipc::IpcConnect, Transport},
 };
 use eyre::{eyre, Result};
-use log;
 use reqwest::Client;
 
 #[derive(Debug, Serialize, Deserialize)]
