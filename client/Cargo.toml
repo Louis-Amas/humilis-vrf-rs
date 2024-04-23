@@ -1,0 +1,18 @@
+[package]
+name = "client"
+version = "0.0.1"
+edition = "2021"
+authors = ["Louis Amas <amaslouis@protonmail.com>"]
+
+[dependencies]
+dotenv = "0.15.0"
+envy = "0.4.2"
+once_cell = "1.19.0"
+alloy.workspace = true
+serde = { version = "1.0.197", features = ['derive']}
+sqlx = { workspace = true }
+contracts = { path = "../contracts/" }
+eyre.workspace = true
+tokio.workspace = true
+reqwest.workspace = true
+log.workspace = true

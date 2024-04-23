@@ -1,0 +1,9 @@
+[package]
+name = "contracts"
+version = "0.0.1"
+edition = "2021"
+authors = ["Louis Amas <amaslouis@protonmail.com>"]
+
+[dependencies]
+automod = "1.0.14"
+alloy.workspace = true

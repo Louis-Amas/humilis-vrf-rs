@@ -1,0 +1,33 @@
+[package]
+name = "vrf"
+version = "0.2.4"
+description = "Fast and extensible Verifiable Random Function (VRF) library; currently supporting secp256k1, secp256r1 and sect163k1 curves"
+keywords = ["vrf", "ecvrf", "secp256k1", "p256", "k163"]
+categories = ["algorithms", "cryptography"]
+license = "MIT"
+authors = ["Witnet Foundation <info@witnet.foundation>"]
+edition = "2018"
+homepage = "https://github.com/witnet/vrf-rs"
+documentation = "https://docs.rs/vrf/"
+repository = "https://github.com/witnet/vrf-rs"
+readme = "README.md"
+exclude = ["/.travis.yml"]
+
+[badges]
+travis-ci = { repository = "witnet/vrf-rs", branch = "master" }
+
+[dependencies]
+failure = "0.1.8"
+openssl = "0.10.38"
+hmac-sha256 = "1.1.2"
+hex = "0.3.2"
+alloy.workspace = true
+
+[dev-dependencies]
+clap = "2.32.0"
+hex = "0.3.2"
+serde.workspace = true
+serde_json.workspace = true
+
+[features]
+vendored = ["openssl/vendored"]
